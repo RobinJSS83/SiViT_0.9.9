@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <annotation>
+    <SimBiology xmlns="http://www.mathworks.com">
+      <Version Major="5" Minor="1" Point="0"/>
+    </SimBiology>
+  </annotation>
+  <model id="mw989a5296_6c69_408a_8204_b4756cbe7762" name="first">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml"/>
+        </notes>
+      </body>
+    </notes>
+    <listOfCompartments>
+      <compartment id="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" name="cytosol" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="HRG" name="HRG" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="3000"/>
+      <species id="Per" name="Per" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E3" name="E3" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="80"/>
+      <species id="E2" name="E2" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="100"/>
+      <species id="PI3K_LY" name="PI3K_LY" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E3H" name="E3H" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E23H" name="E23H" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E23HP" name="E23HP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Shc" name="Shc" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="100"/>
+      <species id="E23HP_Shc" name="E23HP_Shc" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E23HP_ShcP" name="E23HP_ShcP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="GS" name="GS" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="100"/>
+      <species id="E23HP_ShGS" name="E23HP_ShGS" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E2_Per" name="E2_Per" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PTEN_bpV" name="PTEN_bpV" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="RasGDP" name="RasGDP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="120"/>
+      <species id="PI3Ka_PIP3" name="PI3Ka_PIP3" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Raf" name="Raf" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="100"/>
+      <species id="E23H_C" name="E23H_C" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="MEK" name="MEK" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="10"/>
+      <species id="MEKP" name="MEKP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PP2A" name="PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="10"/>
+      <species id="MEKP_PP2A" name="MEKP_PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="MEK_PP2A" name="MEK_PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Akt_PIP3_PP2A" name="Akt_PIP3_PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="MEKPP_PP2A" name="MEKPP_PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="ERK" name="ERK" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="10"/>
+      <species id="ERKP" name="ERKP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E3H_C" name="E3H_C" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PI3K" name="PI3K" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="200"/>
+      <species id="E23HP_PI3K" name="E23HP_PI3K" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Akt_PIP3" name="Akt_PIP3" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PI3Ka" name="PI3Ka" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PI2" name="PI2" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="300"/>
+      <species id="Akt_PI_P_PP2A" name="Akt_PI_P_PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PTEN" name="PTEN" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="42.7798"/>
+      <species id="PIP3" name="PIP3" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="8.05772e-12"/>
+      <species id="PTEN_PIP3" name="PTEN_PIP3" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="3.14554e-08"/>
+      <species id="PTEN_PI" name="PTEN_PI" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="5.02914e-08"/>
+      <species id="PTENP" name="PTENP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="3.39885"/>
+      <species id="PTENP_PTEN" name="PTENP_PTEN" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0.955337"/>
+      <species id="Akt_PI_P" name="Akt_PI_P" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Akt" name="Akt" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="100"/>
+      <species id="E23HP_PI3Ka" name="E23HP_PI3Ka" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="PTEN_PTEN" name="PTEN_PTEN" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0.955337"/>
+      <species id="PI3Ka_PI" name="PI3Ka_PI" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="MEKPP" name="MEKPP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Akt_PI_PP_PP2A" name="Akt_PI_PP_PP2A" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="ShGS" name="ShGS" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="E2Per" name="E2Per" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="mwc3f03a12_ec12_4c40_8d96_c451e549603b" name="MKP3" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="10"/>
+      <species id="mwdc7d2ed3_0616_488f_b4e4_1daa8554d72f" name="PDK1" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="100"/>
+      <species id="Rafa" name="Rafa" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="RasGTP" name="RasGTP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="ShcP" name="ShcP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="Akt_PI_PP" name="Akt_PI_PP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+      <species id="ERKPP" name="ERKPP" compartment="mwb6864ba2_3687_4afa_ae12_fc2854a3db9d" initialAmount="0"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="mu" name="mu" value="0" constant="false"/>
+      <parameter id="scal" name="scal" value="1" constant="false"/>
+      <parameter id="scall" name="scall" value="0.6" constant="false"/>
+      <parameter id="scalll" name="scalll" value="30" constant="false"/>
+      <parameter id="tE3P_max" name="tE3P_max" value="65" constant="false"/>
+      <parameter id="tERKP_max" name="tERKP_max" value="10" constant="false"/>
+      <parameter id="pAkt_max" name="pAkt_max" value="91" constant="false"/>
+      <parameter id="E3_0" name="E3_0" value="0" constant="false"/>
+      <parameter id="PI0" name="PI0" value="70" constant="false"/>
+      <parameter id="Akt0" name="Akt0" value="10" constant="false"/>
+      <parameter id="bpV" name="bpV" value="0" constant="false"/>
+      <parameter id="LY" name="LY" value="0" constant="false"/>
+      <parameter id="PI3K_CY" name="PI3K_CY" value="0" constant="false"/>
+      <parameter id="k1" name="k1" value="0.005" constant="false"/>
+      <parameter id="Kd_1" name="Kd_1" value="600" constant="false"/>
+      <parameter id="k2" name="k2" value="10" constant="false"/>
+      <parameter id="Kd_2" name="Kd_2" value="10" constant="false"/>
+      <parameter id="k51" name="k51" value="0.01" constant="false"/>
+      <parameter id="k53" name="k53" value="0.01" constant="false"/>
+      <parameter id="k3" name="k3" value="1" constant="false"/>
+      <parameter id="Kd_3" name="Kd_3" value="0.1" constant="false"/>
+      <parameter id="V4" name="V4" value="10" constant="false"/>
+      <parameter id="K4" name="K4" value="50" constant="false"/>
+      <parameter id="k5" name="k5" value="0.06" constant="false"/>
+      <parameter id="Kd_5" name="Kd_5" value="1" constant="false"/>
+      <parameter id="k6" name="k6" value="12" constant="false"/>
+      <parameter id="k_6" name="k_6" value="3" constant="false"/>
+      <parameter id="k7" name="k7" value="36" constant="false"/>
+      <parameter id="Kd_7" name="Kd_7" value="9" constant="false"/>
+      <parameter id="k8" name="k8" value="12" constant="false"/>
+      <parameter id="Kd_8" name="Kd_8" value="0.1" constant="false"/>
+      <parameter id="k9" name="k9" value="35" constant="false"/>
+      <parameter id="k_9" name="k_9" value="0" constant="false"/>
+      <parameter id="V10" name="V10" value="0.0154" constant="false"/>
+      <parameter id="K10" name="K10" value="340" constant="false"/>
+      <parameter id="k27" name="k27" value="3" constant="false"/>
+      <parameter id="Kd_27" name="Kd_27" value="1" constant="false"/>
+      <parameter id="k28" name="k28" value="300" constant="false"/>
+      <parameter id="k_28" name="k_28" value="0" constant="false"/>
+      <parameter id="k29" name="k29" value="13520" constant="false"/>
+      <parameter id="k_29" name="k_29" value="0" constant="false"/>
+      <parameter id="V30" name="V30" value="900" constant="false"/>
+      <parameter id="k11" name="k11" value="6" constant="false"/>
+      <parameter id="K11" name="K11" value="0.18" constant="false"/>
+      <parameter id="V12" name="V12" value="3" constant="false"/>
+      <parameter id="K12" name="K12" value="0.1" constant="false"/>
+      <parameter id="k13" name="k13" value="1" constant="false"/>
+      <parameter id="K13" name="K13" value="11.7" constant="false"/>
+      <parameter id="k14" name="k14" value="0.6" constant="false"/>
+      <parameter id="K14" name="K14" value="50" constant="false"/>
+      <parameter id="E_raf" name="E_raf" value="7" constant="false"/>
+      <parameter id="k15" name="k15" value="2.1" constant="false"/>
+      <parameter id="K15" name="K15" value="1" constant="false"/>
+      <parameter id="k16" name="k16" value="0.06" constant="false"/>
+      <parameter id="Kd_16" name="Kd_16" value="1" constant="false"/>
+      <parameter id="k16_kat" name="k16_kat" value="0.6" constant="false"/>
+      <parameter id="k18" name="k18" value="0.6" constant="false"/>
+      <parameter id="k22" name="k22" value="0.06" constant="false"/>
+      <parameter id="k23" name="k23" value="1.2" constant="false"/>
+      <parameter id="K23" name="K23" value="10" constant="false"/>
+      <parameter id="V24" name="V24" value="0.18" constant="false"/>
+      <parameter id="K24" name="K24" value="10" constant="false"/>
+      <parameter id="k31" name="k31" value="0.03" constant="false"/>
+      <parameter id="K_d31" name="K_d31" value="100" constant="false"/>
+      <parameter id="k55" name="k55" value="30" constant="false"/>
+      <parameter id="k56" name="k56" value="30" constant="false"/>
+      <parameter id="k32" name="k32" value="8000" constant="false"/>
+      <parameter id="Kd_32" name="Kd_32" value="0.01" constant="false"/>
+      <parameter id="k33" name="k33" value="15" constant="false"/>
+      <parameter id="k34" name="k34" value="3.6" constant="false"/>
+      <parameter id="V35" name="V35" value="150" constant="false"/>
+      <parameter id="K35" name="K35" value="2" constant="false"/>
+      <parameter id="k36" name="k36" value="1" constant="false"/>
+      <parameter id="Kd_36" name="Kd_36" value="2.2" constant="false"/>
+      <parameter id="k37" name="k37" value="150" constant="false"/>
+      <parameter id="k38" name="k38" value="150" constant="false"/>
+      <parameter id="k39" name="k39" value="15000" constant="false"/>
+      <parameter id="Kd_39" name="Kd_39" value="20" constant="false"/>
+      <parameter id="V40" name="V40" value="150" constant="false"/>
+      <parameter id="K40" name="K40" value="0.1" constant="false"/>
+      <parameter id="k41" name="k41" value="3" constant="false"/>
+      <parameter id="Kd_41" name="Kd_41" value="0.1" constant="false"/>
+      <parameter id="k42" name="k42" value="45" constant="false"/>
+      <parameter id="k43" name="k43" value="30" constant="false"/>
+      <parameter id="k47" name="k47" value="0.3" constant="false"/>
+      <parameter id="k48" name="k48" value="0.001" constant="false"/>
+      <parameter id="k49" name="k49" value="0.003" constant="false"/>
+      <parameter id="Kd_49" name="Kd_49" value="20000" constant="false"/>
+      <parameter id="k50" name="k50" value="0.6" constant="false"/>
+      <parameter id="k_50" name="k_50" value="0.012" constant="false"/>
+      <parameter id="k57" name="k57" value="100" constant="false"/>
+      <parameter id="Kd_57" name="Kd_57" value="10" constant="false"/>
+      <parameter id="k58" name="k58" value="100" constant="false"/>
+      <parameter id="Kd_58" name="Kd_58" value="80" constant="false"/>
+      <parameter id="tPTEN" name="tPTEN" value="0" constant="false"/>
+      <parameter id="sens" name="sens" value="0" constant="false"/>
+      <parameter id="pAkt" name="pAkt" value="0" constant="false"/>
+      <parameter id="tE3P" name="tE3P" value="0" constant="false"/>
+      <parameter id="tERKP" name="tERKP" value="0" constant="false"/>
+      <parameter id="tPTENP" name="tPTENP" value="0" constant="false"/>
+    </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="tE3P">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <plus/>
+              <ci> E23HP </ci>
+              <ci> E23HP_PI3K </ci>
+              <ci> E23HP_PI3Ka </ci>
+              <ci> E23HP_Shc </ci>
+              <ci> E23HP_ShcP </ci>
+              <ci> E23HP_ShGS </ci>
+            </apply>
+            <ci> tE3P_max </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="tPTEN">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> PTENP </ci>
+            <ci> PTEN </ci>
+            <ci> PTENP_PTEN </ci>
+            <ci> PTEN_PTEN </ci>
+            <ci> PTEN_PIP3 </ci>
+            <ci> PTEN_PI </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="tPTENP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <ci> PTENP </ci>
+            <cn> 7.6 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="pAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <plus/>
+              <ci> Akt_PI_PP </ci>
+              <ci> Akt_PI_P </ci>
+              <ci> Akt_PI_PP_PP2A </ci>
+              <ci> Akt_PI_P_PP2A </ci>
+            </apply>
+            <ci> pAkt_max </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="tERKP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <plus/>
+              <ci> ERKP </ci>
+              <ci> ERKPP </ci>
+            </apply>
+            <ci> tERKP_max </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="R1" name="R1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E3"/>
+          <speciesReference species="HRG"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E3H"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> E3 </ci>
+                  <ci> HRG </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_1 </ci>
+                  <ci> E3H </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R2" name="R2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2"/>
+          <speciesReference species="E3H"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23H"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k2 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> E3H </ci>
+                  <ci> E2 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_2 </ci>
+                  <ci> E23H </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R3" name="R3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23H"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k3 </ci>
+              <apply>
+                <minus/>
+                <ci> E23H </ci>
+                <apply>
+                  <times/>
+                  <ci> Kd_3 </ci>
+                  <ci> E23HP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R4" name="R4" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23H"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V4 </ci>
+                <ci> E23HP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K4 </ci>
+                <ci> E23HP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R5" name="R5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP"/>
+          <speciesReference species="Shc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP_Shc"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k5 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> E23HP </ci>
+                  <ci> Shc </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_5 </ci>
+                  <ci> E23HP_Shc </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R6" name="R6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP_Shc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP_ShcP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> k6 </ci>
+                <ci> E23HP_Shc </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> k_6 </ci>
+                <ci> E23HP_ShcP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R7" name="R7" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP_ShcP"/>
+          <speciesReference species="GS"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP_ShGS"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k7 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> E23HP_ShcP </ci>
+                  <ci> GS </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_7 </ci>
+                  <ci> E23HP_ShGS </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R8" name="R8" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP_ShGS"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP"/>
+          <speciesReference species="ShGS"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k8 </ci>
+              <apply>
+                <minus/>
+                <ci> E23HP_ShGS </ci>
+                <apply>
+                  <times/>
+                  <ci> Kd_8 </ci>
+                  <ci> E23HP </ci>
+                  <ci> ShGS </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R9" name="R9" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ShGS"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="GS"/>
+          <speciesReference species="ShcP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k9 </ci>
+              <apply>
+                <minus/>
+                <ci> ShGS </ci>
+                <apply>
+                  <times/>
+                  <ci> k_9 </ci>
+                  <ci> ShcP </ci>
+                  <ci> GS </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R10" name="R10" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ShcP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Shc"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V10 </ci>
+                <ci> ShcP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K10 </ci>
+                <ci> ShcP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R11" name="R11" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="RasGDP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RasGTP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k11 </ci>
+                <ci> RasGDP </ci>
+                <ci> ShGS </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K11 </ci>
+                <ci> RasGDP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R12" name="R12" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="RasGTP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RasGDP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V12 </ci>
+                <ci> RasGTP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K12 </ci>
+                <ci> RasGTP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R13" name="R13" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Raf"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Rafa"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k13 </ci>
+                <ci> Raf </ci>
+                <ci> RasGTP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K13 </ci>
+                <ci> Raf </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R14" name="R14" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Rafa"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Raf"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k14 </ci>
+                <ci> Rafa </ci>
+                <apply>
+                  <plus/>
+                  <ci> Akt_PI_PP </ci>
+                  <ci> E_raf </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Rafa </ci>
+                <ci> K14 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R15" name="R15" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEK"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEKP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k15 </ci>
+                <ci> MEK </ci>
+                <ci> Rafa </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K15 </ci>
+                <ci> MEK </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R16_1" name="R16_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEKP"/>
+          <speciesReference species="PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEKP_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k16 </ci>
+              <ci> MEKP </ci>
+              <ci> PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R16_2" name="R16_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEKP_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEK_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k16_kat </ci>
+              <ci> MEKP_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R16_3" name="R16_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEK_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEK"/>
+          <speciesReference species="PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k18 </ci>
+              <ci> MEK_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R17_1" name="R17_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEKP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEKPP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k15 </ci>
+                <ci> MEKP </ci>
+                <ci> Rafa </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K15 </ci>
+                <ci> MEKP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R18_1" name="R18_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEKPP"/>
+          <speciesReference species="PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEKPP_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k16 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PP2A </ci>
+                  <ci> MEKPP </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_16 </ci>
+                  <ci> MEKPP_PP2A </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R18_2" name="R18_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEKPP_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEKP_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k16_kat </ci>
+              <ci> MEKPP_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R18_3" name="R18_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MEKP_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MEKP"/>
+          <speciesReference species="PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k22 </ci>
+              <ci> MEKP_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R19" name="R19" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ERK"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ERKP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k23 </ci>
+                <ci> ERK </ci>
+                <ci> MEKPP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K23 </ci>
+                <ci> ERK </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R20" name="R20" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ERKP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ERK"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V24 </ci>
+                <ci> mwc3f03a12_ec12_4c40_8d96_c451e549603b </ci>
+                <ci> ERKP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K24 </ci>
+                <ci> ERKP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R21" name="R21" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ERKP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ERKPP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k23 </ci>
+                <ci> ERKP </ci>
+                <ci> MEKPP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K23 </ci>
+                <ci> ERKP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R22" name="R22" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ERKPP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ERKP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V24 </ci>
+                <ci> mwc3f03a12_ec12_4c40_8d96_c451e549603b </ci>
+                <ci> ERKPP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K24 </ci>
+                <ci> ERKPP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R23" name="R23" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP"/>
+          <speciesReference species="PI3K"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP_PI3K"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k27 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> E23HP </ci>
+                  <ci> PI3K </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_27 </ci>
+                  <ci> E23HP_PI3K </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R24" name="R24" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP_PI3K"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP_PI3Ka"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k28 </ci>
+              <apply>
+                <minus/>
+                <ci> E23HP_PI3K </ci>
+                <apply>
+                  <times/>
+                  <ci> k_28 </ci>
+                  <ci> E23HP_PI3Ka </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R25" name="R25" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP_PI3Ka"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP"/>
+          <speciesReference species="PI3Ka"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> k29 </ci>
+                <ci> E23HP_PI3Ka </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> k_29 </ci>
+                <ci> E23HP </ci>
+                <ci> PI3Ka </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R26" name="R26" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PI3Ka"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PI3K"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> V30 </ci>
+              <ci> PI3Ka </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R27_1" name="R27_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PI2"/>
+          <speciesReference species="PI3Ka"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PI3Ka_PI"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PI2 </ci>
+                  <ci> PI3Ka </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> K_d31 </ci>
+                  <ci> PI3Ka_PI </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_1" name="R28_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PIP3"/>
+          <speciesReference species="PTEN"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTEN_PIP3"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k32 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PIP3 </ci>
+                  <ci> PTEN </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_32 </ci>
+                  <ci> PTEN_PIP3 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_2" name="R28_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTEN_PIP3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTEN_PI"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k33 </ci>
+              <ci> PTEN_PIP3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_3" name="R28_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTEN_PI"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PI2"/>
+          <speciesReference species="PTEN"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k34 </ci>
+              <ci> PTEN_PI </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_4" name="R28_4" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTEN"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTENP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V35 </ci>
+                <ci> PTEN </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K35 </ci>
+                <ci> PTEN </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_5" name="R28_5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTEN"/>
+          <speciesReference species="PTENP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTENP_PTEN"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k36 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PTEN </ci>
+                  <ci> PTENP </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_36 </ci>
+                  <ci> PTENP_PTEN </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_6" name="R28_6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTENP_PTEN"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTEN_PTEN"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k37 </ci>
+              <ci> PTENP_PTEN </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R28_7" name="R28_7" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTEN_PTEN"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTEN" stoichiometry="2"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k38 </ci>
+              <ci> PTEN_PTEN </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R29" name="R29" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt"/>
+          <speciesReference species="PIP3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PIP3"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k39 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PIP3 </ci>
+                  <ci> Akt </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_39 </ci>
+                  <ci> Akt_PIP3 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R30" name="R30" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PIP3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PI_P"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V40 </ci>
+                <ci> mwdc7d2ed3_0616_488f_b4e4_1daa8554d72f </ci>
+                <ci> Akt_PIP3 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K40 </ci>
+                <ci> Akt_PIP3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R31_1" name="R31_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PI_P"/>
+          <speciesReference species="PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PI_P_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41 </ci>
+              <ci> Akt_PI_P </ci>
+              <ci> PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R31_2" name="R31_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PI_P_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PIP3_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k42 </ci>
+              <ci> Akt_PI_P_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R31_3" name="R31_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PIP3_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PIP3"/>
+          <speciesReference species="PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43 </ci>
+              <ci> Akt_PIP3_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R32" name="R32" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PI_P"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PI_PP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V40 </ci>
+                <ci> mwdc7d2ed3_0616_488f_b4e4_1daa8554d72f </ci>
+                <ci> Akt_PI_P </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K40 </ci>
+                <ci> Akt_PI_P </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R33_1" name="R33_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PI_PP"/>
+          <speciesReference species="PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PI_PP_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> Akt_PI_PP </ci>
+                  <ci> PP2A </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_41 </ci>
+                  <ci> Akt_PI_PP_PP2A </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R33_2" name="R33_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PI_PP_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PI_P_PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k42 </ci>
+              <ci> Akt_PI_PP_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R33_3" name="R33_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Akt_PI_P_PP2A"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Akt_PI_P"/>
+          <speciesReference species="PP2A"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k47 </ci>
+              <ci> Akt_PI_P_PP2A </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R34" name="R34" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23HP"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k48 </ci>
+              <ci> E23HP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R35" name="R35" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2"/>
+          <speciesReference species="Per"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2_Per"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k49 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> Per </ci>
+                  <ci> E2 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_49 </ci>
+                  <ci> E2_Per </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R36" name="R36" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2_Per"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2Per"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> k50 </ci>
+                <ci> E2_Per </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> k_50 </ci>
+                <ci> E2Per </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R37" name="R37" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E3H"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E3H_C"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k51 </ci>
+              <ci> E3H </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R38" name="R38" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2"/>
+          <speciesReference species="E3H_C"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23H"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k2 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> E3H_C </ci>
+                  <ci> E2 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_2 </ci>
+                  <ci> E23H </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R39" name="R39" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23H"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23H_C"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k53 </ci>
+              <ci> E23H </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R40" name="R40" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E23H_C"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E23HP"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k3 </ci>
+              <apply>
+                <minus/>
+                <ci> E23H_C </ci>
+                <apply>
+                  <times/>
+                  <ci> Kd_3 </ci>
+                  <ci> E23HP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R41" name="R41" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PI3Ka_PI"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PI3Ka_PIP3"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k55 </ci>
+              <ci> PI3Ka_PI </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R42" name="R42" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PI3Ka_PIP3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PI3Ka"/>
+          <speciesReference species="PIP3"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k56 </ci>
+              <ci> PI3Ka_PIP3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R43" name="R43" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PTEN"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTEN_bpV"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k57 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PTEN </ci>
+                  <ci> bpV </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_57 </ci>
+                  <ci> PTEN_bpV </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R44" name="R44" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PI3K"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PI3K_LY"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k58 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> PI3K </ci>
+                  <ci> LY </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Kd_58 </ci>
+                  <ci> PI3K_LY </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
